@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Journal</title>
+    </head>
+    <body>
+        <header>
+            <h2>International Journal of Biology and Chemistry (Int. j. biol. chem.)</h2>
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <a href="/kz"><img src="https://www.kaznu.kz/Content/kaznu/img/others/kz1.png" alt="KZ"></a>
+                <a href="/en"><img src="https://www.kaznu.kz/Content/kaznu/img/others/en.png" alt="EN"></a>
+                <a href="/ru"><img src="https://www.kaznu.kz/Content/kaznu/img/others/ru.png" alt="RU"></a>
+            </div>
+        </header>
+        <nav class="bg-light border navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+                <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbar" data-bs-toggle="collapse" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav me-auto mt-2">
+                        <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/archives.html">Archives</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/announcements.html">Announcements</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Information
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="/about.html">About journal</a></li>
+                              <li><a class="dropdown-item" href="/certificate-of-registration.html">Certificate of registration</a></li>
+                              <li><a class="dropdown-item" href="/editorialTeam.html">Editorial team</a></li>
+                              <li><a class="dropdown-item" href="/publication_ethics.html">Publication ethics</a></li>
+                              <li><a class="dropdown-item" href="/policy_journal.html">Journal policy</a></li>
+                              <li><a class="dropdown-item" href="/submissions.html">Submissions</a></li>
+                              <li><a class="dropdown-item" href="/contact.html">Contact</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="/readers.html">For readers</a></li>
+                              <li><a class="dropdown-item" href="/authors.html">For authors</a></li>
+                              <li><a class="dropdown-item" href="/librarians.html">For librarians</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                <ul class="navbar-nav me-auto mt-2" id="reg">
+                        <li><hr class="dropdown-divider"></li>
+                        <li class="nav-item1"><a class="nav-link" href="/register.html">Register</a></li>
+                        <li class="nav-item1"><a class="nav-link" href="/login.html">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="column">    
+            
+            <div class="page page_login">
+                <nav class="cmp_breadcrumbs" role="navigation" aria-label="You are here:">
+                <ol>
+                    <li>
+                        <a href="https://ijbch.kaznu.kz/index.php/kaznu/index">
+                            Home
+                        </a>
+                        <span class="separator">/</span>
+                    </li>
+                    <li class="current">
+                        <span aria-current="page">
+                                                Login
+                                        </span>
+                    </li>
+                </ol>
+            </nav>
+            
+                <h1>
+                    Login
+                </h1>
+            
+                    
+                <form class="cmp_form cmp_form login" id="login" method="post" action="https://ijbch.kaznu.kz/index.php/kaznu/login/signIn">
+                    <input type="hidden" name="csrfToken" value="4ecd78e46d93f3c1359b96245163420d">
+            
+                    
+                    <input type="hidden" name="source" value="">
+            
+                    <fieldset class="fields">
+                        <legend class="pkp_screen_reader">Login</legend>
+                        <div class="username">
+                            <label>
+                                <span class="label">
+                                    Username
+                                    <span class="required" aria-hidden="true">*</span>
+                                    <span class="pkp_screen_reader">
+                                        Required
+                                    </span>
+                                </span>
+                                <input type="text" name="username" id="username" value="" maxlength="32" required="" aria-required="true">
+                            </label>
+                        </div>
+                        <div class="password">
+                            <label>
+                                <span class="label">
+                                    Password
+                                    <span class="required" aria-hidden="true">*</span>
+                                    <span class="pkp_screen_reader">
+                                        Required
+                                    </span>
+                                </span>
+                                <input type="password" name="password" id="password" value="" password="true" maxlength="32" required="" aria-required="true">
+                                <a href="/forgot.html">
+                                    Forgot your password?
+                                </a>
+                            </label>
+                        </div>
+                        <div class="remember checkbox">
+                            <label>
+                                <input type="checkbox" name="remember" id="remember" value="1" checked="$remember">
+                                <span class="label">
+                                    Keep me logged in
+                                </span>
+                            </label>
+                        </div>
+                        <div class="buttons">
+                            <button class="submit" type="submit">
+                                Login
+                            </button>
+            
+                                                                    <a href="/register.html" class="register">
+                                    Register
+                                </a>
+                                        </div>
+                    </fieldset>
+                </form>
+            </div>
+
+        </div>
+    </body>
+    <footer>
+        <div class="pkp_footer_content">
+			<div class="pkpfooter-1" style="margin-inline: 2em;">
+				71, al-Farabi ave.,<br>
+				Almaty, Kazakhstan, 050048<br><br>
+				Galiya.Irmukhametova@kaznu.kz<br>
+				Aizhan.Zhussupova@kaznu.kz<br><br>
+			</div>
+            <div class="" style="
+    display: grid;
+    grid-column-gap: 10px; margin-bottom: 2em; margin-inline: 2em;">
+				<a target="_blank" href="http://kaznu.antiplagiat.ru">Antiplagiarism</a>
+				<a href="/readers.html">For readers</a>
+				<a href="/authors.html">For authors</a>
+				<a href="/librarians.html">For librarians</a>
+			</div>
+            <div class="pkpfooter-3 pkpfooter-ssilka" style="
+            display: grid;
+            grid-column-gap: 10px; margin-bottom: 2em;margin-inline: 2em;">
+				<a class="pkpf-ssglav" href="contact.html">Contacts</a>
+				<a href="/submissions.html">Submit Article</a>
+				<a target="_blank" href="http://journal.kaznu.kz/">KazNU journals</a>
+				<a target="_blank" href="/index.php/kaznu/about/aboutThisPublishingSystem">Open Journal Systems</a>
+			</div>
+			<div class="pkpfooter-4" style="margin-inline: 2em;">
+				<div class="soccet-text">
+					We are in social networks
+				</div>
+				<a target="_blank" href="https://www.facebook.com/International-Journal-of-Biology-and-Chemistry-1697830597179942/">
+					<div class="socset-footer facebook-footer"></div>
+				</a>
+				<a target="_blank" href="https://twitter.com/kaznujournals">
+					<div class="socset-footer twitter-footer"></div>
+				</a>
+			</div>
+		</div>
+        <div class="pkpfooter-son">
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" ><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/80x15.png"></a><br>This work is licensed under a
+            <a style="color:rgb(47, 88, 0); text-decoration: underline;" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+        </div>
+    </footer>
+</html>

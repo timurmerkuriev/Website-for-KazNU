@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Journal</title>
+    </head>
+    <body>
+        <header>
+            <h2>International Journal of Biology and Chemistry (Int. j. biol. chem.)</h2>
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <a href="/kz"><img src="https://www.kaznu.kz/Content/kaznu/img/others/kz1.png" alt="KZ"></a>
+                <a href="/en"><img src="https://www.kaznu.kz/Content/kaznu/img/others/en.png" alt="EN"></a>
+                <a href="/ru"><img src="https://www.kaznu.kz/Content/kaznu/img/others/ru.png" alt="RU"></a>
+            </div>
+        </header>
+        <nav class="bg-light border navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+                <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbar" data-bs-toggle="collapse" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav me-auto mt-2">
+                        <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/archives.html">Archives</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/announcements.html">Announcements</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Information
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="/about.html">About journal</a></li>
+                              <li><a class="dropdown-item" href="/certificate-of-registration.html">Certificate of registration</a></li>
+                              <li><a class="dropdown-item" href="/editorialTeam.html">Editorial team</a></li>
+                              <li><a class="dropdown-item" href="/publication_ethics.html">Publication ethics</a></li>
+                              <li><a class="dropdown-item" href="/policy_journal.html">Journal policy</a></li>
+                              <li><a class="dropdown-item" href="/submissions.html">Submissions</a></li>
+                              <li><a class="dropdown-item" href="/contact.html">Contact</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="/readers.html">For readers</a></li>
+                              <li><a class="dropdown-item" href="/authors.html">For authors</a></li>
+                              <li><a class="dropdown-item" href="/librarians.html">For librarians</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                <ul class="navbar-nav me-auto mt-2" id="reg">
+                        <li><hr class="dropdown-divider"></li>
+                        <li class="nav-item1"><a class="nav-link" href="/register.html">Register</a></li>
+                        <li class="nav-item1"><a class="nav-link" href="/login.html">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="column">    
+            
+            <div class="page page_register">
+                <nav class="cmp_breadcrumbs" role="navigation" aria-label="You are here:">
+                <ol>
+                    <li>
+                        <a href="https://ijbch.kaznu.kz/index.php/kaznu/index">
+                            Home
+                        </a>
+                        <span class="separator">/</span>
+                    </li>
+                    <li class="current">
+                        <span aria-current="page">
+                                                Register
+                                        </span>
+                    </li>
+                </ol>
+            </nav>
+            
+                <h1>
+                    Register
+                </h1>
+            
+                <form class="cmp_form register" id="register" method="post" action="https://ijbch.kaznu.kz/index.php/kaznu/user/register">
+            
+            
+            <script type="text/javascript">
+                function openORCID() {
+                    // First sign out from ORCID to make sure no other user is logged in
+                    // with ORCID
+                    $.ajax({
+                        url: 'https://sandbox.orcid.org/userStatus.json?logUserOut=true',
+                        dataType: 'jsonp',
+                        success: function(result,status,xhr) {
+                            console.log("ORCID Logged In: " + result.loggedIn);
+                        },
+                        error: function (xhr, status, error) {
+                            console.log(status + ", error: " + error);
+                        }
+                    });
+                    var oauthWindow = window.open("https://sandbox.orcid.org/oauth/authorize?response_type=code&scope=%2Fauthenticate&redirect_uri=https%3A%2F%2Fijbch.kaznu.kz%2Findex.php%2Fkaznu%2Forcidapi%2ForcidAuthorize%3FtargetOp%3Dregister", "_blank", "toolbar=no, scrollbars=yes, width=500, height=700, top=500, left=500");
+                    oauthWindow.opener = self;
+                    return false;
+                }
+            </script>
+            
+                <input type="hidden" id="orcid" name="orcid" class="" value="" maxlength="37">
+            
+                <button id="connect-orcid-button" class="cmp_button" onclick="return openORCID();">
+                <svg class="orcid_icon" viewBox="0 0 256 256" aria-hidden="true">
+                <style type="text/css">
+                    .st0{fill:#A6CE39;}
+                    .st1{fill:#FFFFFF;}
+                </style>
+                <path class="st0" d="M256,128c0,70.7-57.3,128-128,128C57.3,256,0,198.7,0,128C0,57.3,57.3,0,128,0C198.7,0,256,57.3,256,128z"></path>
+                <g>
+                    <path class="st1" d="M86.3,186.2H70.9V79.1h15.4v48.4V186.2z"></path>
+                    <path class="st1" d="M108.9,79.1h41.6c39.6,0,57,28.3,57,53.6c0,27.5-21.5,53.6-56.8,53.6h-41.8V79.1z M124.3,172.4h24.5
+                        c34.9,0,42.9-26.5,42.9-39.7c0-21.5-13.7-39.7-43.7-39.7h-23.7V172.4z"></path>
+                    <path class="st1" d="M88.7,56.8c0,5.5-4.5,10.1-10.1,10.1c-5.6,0-10.1-4.6-10.1-10.1c0-5.6,4.5-10.1,10.1-10.1
+                        C84.2,46.7,88.7,51.3,88.7,56.8z"></path>
+                </g>
+            </svg>
+                    Create or Connect your ORCID iD
+                </button>
+            <a href="/orcidapi.html">What is ORCID?</a>
+            
+            
+                    <input type="hidden" name="csrfToken" value="5b92472835f441949e445660a9cbc1ac">
+            
+                    
+                    
+                    <fieldset class="identity">
+                <legend>
+                    Profile
+                </legend>
+                <div class="fields">
+                    <div class="given_name">
+                        <label>
+                            <span class="label">
+                                Given Name
+                                <span class="required" aria-hidden="true">*</span>
+                                <span class="pkp_screen_reader">
+                                    Required
+                                </span>
+                            </span>
+                            <input type="text" name="givenName" autocomplete="given-name" id="givenName" value="" maxlength="255" required="" aria-required="true">
+                        </label>
+                    </div>
+                    <div class="family_name">
+                        <label>
+                            <span class="label">
+                                Family Name
+                            </span>
+                            <input type="text" name="familyName" autocomplete="family-name" id="familyName" value="" maxlength="255">
+                        </label>
+                    </div>
+                    <div class="affiliation">
+                        <label>
+                            <span class="label">
+                                Affiliation
+                                <span class="required" aria-hidden="true">*</span>
+                                <span class="pkp_screen_reader">
+                                    Required
+                                </span>
+                            </span>
+                            <input type="text" name="affiliation" id="affiliation" value="" required="" aria-required="true">
+                        </label>
+                    </div>
+                    <div class="country">
+                        <label>
+                            <span class="label">
+                                Country
+                                <span class="required" aria-hidden="true">*</span>
+                                <span class="pkp_screen_reader">
+                                    Required
+                                </span>
+                            </span>
+                            <select name="country" id="country" required="" aria-required="true">
+                                <option></option>
+                                <option value="AU">Австралия</option>
+            <option value="AT">Австрия</option>
+            <option value="AZ">Азербайджан</option>
+            <option value="AX">Аландские острова</option>
+            <option value="AL">Албания</option>
+            <option value="DZ">Алжир</option>
+            <option value="AS">Американские Самоа</option>
+            <option value="AI">Ангвилла</option>
+            <option value="AO">Ангола</option>
+            <option value="AD">Андорра</option>
+            <option value="AQ">Антарктика</option>
+            <option value="AG">Антигуа и Барбуда</option>
+            <option value="AR">Аргентина</option>
+            <option value="AM">Армения</option>
+            <option value="AW">Аруба</option>
+            <option value="AF">Афганистан</option>
+            <option value="BS">Багамы</option>
+            <option value="BD">Бангладеш</option>
+            <option value="BB">Барбадос</option>
+            <option value="BH">Бахрейн</option>
+            <option value="BY">Беларусь</option>
+            <option value="BZ">Белиз</option>
+            <option value="BE">Бельгия</option>
+            <option value="BJ">Бенин</option>
+            <option value="BM">Бермуды</option>
+            <option value="BG">Болгария</option>
+            <option value="VE">Боливарианская Республика Венесуэла</option>
+            <option value="BO">Боливия</option>
+            <option value="BQ">Бонайре, Синт-Эстатиус и Саба</option>
+            <option value="BA">Босния и Герцеговина</option>
+            <option value="BW">Ботсвана</option>
+            <option value="BR">Бразилия</option>
+            <option value="IO">Британская территория Индийского океана</option>
+            <option value="BN">Бруней Даруссалам</option>
+            <option value="BF">Буркина-Фасо</option>
+            <option value="BI">Бурунди</option>
+            <option value="BT">Бутан</option>
+            <option value="VU">Вануату</option>
+            <option value="HU">Венгрия</option>
+            <option value="VG">Виргинские острова (Британия)</option>
+            <option value="VI">Виргинские острова (США)</option>
+            <option value="TL">Восточный Тимор</option>
+            <option value="VN">Вьетнам</option>
+            <option value="GA">Габон</option>
+            <option value="HT">Гаити</option>
+            <option value="GY">Гайана</option>
+            <option value="GM">Гамбия</option>
+            <option value="GH">Гана</option>
+            <option value="GP">Гваделупа</option>
+            <option value="GT">Гватемала</option>
+            <option value="GN">Гвинея</option>
+            <option value="GW">Гвинея-Бисау</option>
+            <option value="DE">Германия</option>
+            <option value="GG">Гернси</option>
+            <option value="GI">Гибралтар</option>
+            <option value="HN">Гондурас</option>
+            <option value="HK">Гонконг</option>
+            <option value="VA">Государство-город Ватикан</option>
+            <option value="GD">Гренада</option>
+            <option value="GL">Гренландия</option>
+            <option value="GR">Греция</option>
+            <option value="GE">Грузия</option>
+            <option value="GU">Гуам</option>
+            <option value="DK">Дания</option>
+            <option value="CD">Демократическая Республика Конго</option>
+            <option value="JE">Джерси</option>
+            <option value="DJ">Джибути</option>
+            <option value="DM">Доминика</option>
+            <option value="DO">Доминиканская республика</option>
+            <option value="EG">Египет</option>
+            <option value="ZM">Замбия</option>
+            <option value="EH">Западная Сахара</option>
+            <option value="ZW">Зимбабве</option>
+            <option value="IL">Израиль</option>
+            <option value="IN">Индия</option>
+            <option value="ID">Индонезия</option>
+            <option value="JO">Иордания</option>
+            <option value="IQ">Ирак</option>
+            <option value="IR">Иран</option>
+            <option value="IE">Ирландия</option>
+            <option value="IS">Исландия</option>
+            <option value="ES">Испания</option>
+            <option value="IT">Италия</option>
+            <option value="YE">Йемен</option>
+            <option value="CV">Кабо-Верде</option>
+            <option value="KZ">Казахстан</option>
+            <option value="KY">Каймановы острова</option>
+            <option value="KH">Камбоджа</option>
+            <option value="CM">Камерун</option>
+            <option value="CA">Канада</option>
+            <option value="QA">Катар</option>
+            <option value="KE">Кения</option>
+            <option value="CY">Кипр</option>
+            <option value="KG">Киргизия</option>
+            <option value="KI">Кирибати</option>
+            <option value="CN">Китай</option>
+            <option value="TW">Китайская провинция Тайвань</option>
+            <option value="CC">Кокосовые острова</option>
+            <option value="CO">Колумбия</option>
+            <option value="KM">Коморы</option>
+            <option value="CG">Конго</option>
+            <option value="KP">Корейская Народно-Демократическая Республика</option>
+            <option value="CR">Коста-Рика</option>
+            <option value="CI">Кот-д'Ивуар</option>
+            <option value="CU">Куба</option>
+            <option value="KW">Кувейт</option>
+            <option value="CW">Кюрасао</option>
+            <option value="LA">Лаосская Народно-Демократическая Республика</option>
+            <option value="LV">Латвия</option>
+            <option value="LS">Лесото</option>
+            <option value="LR">Либерия</option>
+            <option value="LB">Ливан</option>
+            <option value="LY">Ливия</option>
+            <option value="LT">Литва</option>
+            <option value="LI">Лихтенштейн</option>
+            <option value="LU">Люксембург</option>
+            <option value="MU">Маврикий</option>
+            <option value="MR">Мавритания</option>
+            <option value="MG">Мадагаскар</option>
+            <option value="YT">Майот</option>
+            <option value="MO">Макао</option>
+            <option value="MW">Малави</option>
+            <option value="MY">Малайзия</option>
+            <option value="ML">Мали</option>
+            <option value="MV">Мальдивы</option>
+            <option value="MT">Мальта</option>
+            <option value="MA">Марокко</option>
+            <option value="MQ">Мартиника</option>
+            <option value="MH">Маршалловы острова</option>
+            <option value="MX">Мексика</option>
+            <option value="MZ">Мозамбик</option>
+            <option value="MC">Монако</option>
+            <option value="MN">Монголия</option>
+            <option value="MS">Монтсеррат</option>
+            <option value="MM">Мьянма</option>
+            <option value="NA">Намибия</option>
+            <option value="NR">Науру</option>
+            <option value="NP">Непал</option>
+            <option value="NE">Нигер</option>
+            <option value="NG">Нигерия</option>
+            <option value="NL">Нидерланды</option>
+            <option value="NI">Никарагуа</option>
+            <option value="NU">Ниуэ</option>
+            <option value="NZ">Новая Зеландия</option>
+            <option value="NC">Новая Каледония</option>
+            <option value="NO">Норвегия</option>
+            <option value="AE">Объединённые Арабские Эмираты</option>
+            <option value="OM">Оман</option>
+            <option value="BV">Остров Буве</option>
+            <option value="IM">Остров Мэн</option>
+            <option value="NF">Остров Норфолк</option>
+            <option value="CX">Остров Рождества</option>
+            <option value="SH">Остров Святой Елены, Остров Вознесения и Тристан-да-Кунья</option>
+            <option value="HM">Остров Херд и острова МакДональд</option>
+            <option value="CK">Острова Кука</option>
+            <option value="TC">Острова Туркс и Каикос</option>
+            <option value="MP">Острова северной Марианы</option>
+            <option value="PK">Пакистан</option>
+            <option value="PW">Палау</option>
+            <option value="PS">Палестина</option>
+            <option value="PA">Панама</option>
+            <option value="PG">Папуа — Новая Гвинея</option>
+            <option value="PY">Парагвай</option>
+            <option value="PE">Перу</option>
+            <option value="PN">Питкэрн</option>
+            <option value="PL">Польша</option>
+            <option value="PT">Португалия</option>
+            <option value="PR">Пуэрто-Рико</option>
+            <option value="KR">Республика Корея</option>
+            <option value="MD">Республика Молдова</option>
+            <option value="RE">Реюньон</option>
+            <option value="RU">Российская Федерация</option>
+            <option value="RW">Руанда</option>
+            <option value="RO">Румыния</option>
+            <option value="SV">Сальвадор</option>
+            <option value="WS">Самоа</option>
+            <option value="SM">Сан-Марино</option>
+            <option value="ST">Сан-Томе и Принсипи</option>
+            <option value="SA">Саудовская Аравия</option>
+            <option value="MK">Северная Македония</option>
+            <option value="SC">Сейшелы</option>
+            <option value="BL">Сен-Бартельми</option>
+            <option value="MF">Сен-Мартен (Франция)</option>
+            <option value="PM">Сен-Пьер и Микелон</option>
+            <option value="SN">Сенегал</option>
+            <option value="VC">Сент-Винсент и Гренадины</option>
+            <option value="KN">Сент-Китс и Невис</option>
+            <option value="LC">Сент-Люсия</option>
+            <option value="RS">Сербия</option>
+            <option value="SG">Сингапур</option>
+            <option value="SX">Синт-Мартен (голландская часть)</option>
+            <option value="SY">Сирийская Арабская Республика</option>
+            <option value="SK">Словакия</option>
+            <option value="SI">Словения</option>
+            <option value="UM">Соединенные штаты Малых  Удаленных островов</option>
+            <option value="GB">Соединённое Королевство</option>
+            <option value="US">Соединённые штаты</option>
+            <option value="SB">Соломоновы Острова</option>
+            <option value="SO">Сомали</option>
+            <option value="SD">Судан</option>
+            <option value="SR">Суринам</option>
+            <option value="SL">Сьерра-Леоне</option>
+            <option value="TJ">Таджикистан</option>
+            <option value="TH">Таиланд</option>
+            <option value="TZ">Танзания</option>
+            <option value="TG">Того</option>
+            <option value="TK">Токелау</option>
+            <option value="TO">Тонга</option>
+            <option value="TT">Тринидад и Тобаго</option>
+            <option value="TV">Тувалу</option>
+            <option value="TN">Тунис</option>
+            <option value="TM">Туркменистан</option>
+            <option value="TR">Турция</option>
+            <option value="UG">Уганда</option>
+            <option value="UZ">Узбекистан</option>
+            <option value="UA">Украина</option>
+            <option value="WF">Уоллес и Футана</option>
+            <option value="UY">Уругвай</option>
+            <option value="FO">Фарерские острова</option>
+            <option value="FM">Федеративные Штаты Микронезии</option>
+            <option value="FJ">Фиджи</option>
+            <option value="PH">Филиппины</option>
+            <option value="FI">Финляндия</option>
+            <option value="FK">Фолклендские (Мальвинские) острова</option>
+            <option value="FR">Франция</option>
+            <option value="GF">Французская Гвиана</option>
+            <option value="PF">Французская Полинезия</option>
+            <option value="TF">Французские южные территории</option>
+            <option value="HR">Хорватия</option>
+            <option value="CF">Центрально-африканская республика</option>
+            <option value="TD">Чад</option>
+            <option value="ME">Черногория</option>
+            <option value="CZ">Чехия</option>
+            <option value="CL">Чили</option>
+            <option value="CH">Швейцария</option>
+            <option value="SE">Швеция</option>
+            <option value="SJ">Шпицберген и Ян-Майен</option>
+            <option value="LK">Шри-Ланка</option>
+            <option value="EC">Эквадор</option>
+            <option value="GQ">Экваториальная Гвинея</option>
+            <option value="ER">Эритрея</option>
+            <option value="SZ">Эсватини</option>
+            <option value="EE">Эстония</option>
+            <option value="ET">Эфиопия</option>
+            <option value="ZA">Южная Африка</option>
+            <option value="GS">Южная Джорджия и Южные Сандвичевы острова</option>
+            <option value="SS">Южный Судан</option>
+            <option value="JM">Ямайка</option>
+            <option value="JP">Япония</option>
+            
+                            </select>
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+            
+            <fieldset class="login">
+                <legend>
+                    Login
+                </legend>
+                <div class="fields">
+                    <div class="email">
+                        <label>
+                            <span class="label">
+                                Email
+                                <span class="required" aria-hidden="true">*</span>
+                                <span class="pkp_screen_reader">
+                                    Required
+                                </span>
+                            </span>
+                            <input type="email" name="email" id="email" value="" maxlength="90" required="" aria-required="true" autocomplete="email">
+                        </label>
+                    </div>
+                    <div class="username">
+                        <label>
+                            <span class="label">
+                                Username
+                                <span class="required" aria-hidden="true">*</span>
+                                <span class="pkp_screen_reader">
+                                    Required
+                                </span>
+                            </span>
+                            <input type="text" name="username" id="username" value="" maxlength="32" required="" aria-required="true" autocomplete="username">
+                        </label>
+                    </div>
+                    <div class="password">
+                        <label>
+                            <span class="label">
+                                Password
+                                <span class="required" aria-hidden="true">*</span>
+                                <span class="pkp_screen_reader">
+                                    Required
+                                </span>
+                            </span>
+                            <input type="password" name="password" id="password" password="true" maxlength="32" required="" aria-required="true">
+                        </label>
+                    </div>
+                    <div class="password">
+                        <label>
+                            <span class="label">
+                                Repeat password
+                                <span class="required" aria-hidden="true">*</span>
+                                <span class="pkp_screen_reader">
+                                    Required
+                                </span>
+                            </span>
+                            <input type="password" name="password2" id="password2" password="true" maxlength="32" required="" aria-required="true">
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+            
+                            
+                        <fieldset class="consent">
+                                                                    <legend class="pkp_screen_reader">Privacy Options</legend>
+                                <div class="fields">
+                                    <div class="optin optin-privacy">
+                                        <label>
+                                            <input type="checkbox" name="privacyConsent" value="1">
+                                                                            Yes, I agree to have my data collected and stored according to the <a href="https://ijbch.kaznu.kz/index.php/kaznu/about/privacy" target="_blank">privacy statement</a>.
+                                        </label>
+                                    </div>
+                                </div>
+                                                            <div class="fields">
+                                <div class="optin optin-email">
+                                    <label>
+                                        <input type="checkbox" name="emailConsent" value="1">
+                                        Yes, I would like to be notified of new publications and announcements.
+                                    </label>
+                                </div>
+                            </div>
+                        </fieldset>
+            
+                                                                                                                                                        <fieldset class="reviewer">
+                                                                                                <div class="fields">
+                                    <div id="reviewerOptinGroup" class="optin">
+                                                                                                            <label>
+                                                                                            <input type="checkbox" name="reviewerGroup[16]" value="1">
+                                                    Yes, I would like to be contacted with requests to review submissions to this journal.
+                                                </label>
+                                                                                                </div>
+                                    <div id="reviewerInterests" class="reviewer_interests">
+                                        <label>
+                                            <span class="label">
+                                                Reviewing interests
+                                            </span>
+                                            <input type="text" name="interests" id="interests" value="">
+                                        </label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                                
+                    
+                            
+                            
+                    <div class="buttons">
+                        <button class="submit" type="submit">
+                            Register
+                        </button>
+            
+                                    <a href="/login.html" class="login">Login</a>
+                    </div>
+                </form>
+            
+            </div>
+
+
+
+        </div>
+    </body>
+    <footer>
+        <div class="pkp_footer_content">
+			<div class="pkpfooter-1" style="margin-inline: 2em;">
+				71, al-Farabi ave.,<br>
+				Almaty, Kazakhstan, 050048<br><br>
+				Galiya.Irmukhametova@kaznu.kz<br>
+				Aizhan.Zhussupova@kaznu.kz<br><br>
+			</div>
+            <div class="" style="
+    display: grid;
+    grid-column-gap: 10px; margin-bottom: 2em; margin-inline: 2em;">
+				<a target="_blank" href="http://kaznu.antiplagiat.ru">Antiplagiarism</a>
+				<a href="/readers.html">For readers</a>
+				<a href="/authors.html">For authors</a>
+				<a href="/librarians.html">For librarians</a>
+			</div>
+            <div class="pkpfooter-3 pkpfooter-ssilka" style="
+            display: grid;
+            grid-column-gap: 10px; margin-bottom: 2em;margin-inline: 2em;">
+				<a class="pkpf-ssglav" href="contact.html">Contacts</a>
+				<a href="/submissions.html">Submit Article</a>
+				<a target="_blank" href="http://journal.kaznu.kz/">KazNU journals</a>
+				<a target="_blank" href="/index.php/kaznu/about/aboutThisPublishingSystem">Open Journal Systems</a>
+			</div>
+			<div class="pkpfooter-4" style="margin-inline: 2em;">
+				<div class="soccet-text">
+					We are in social networks
+				</div>
+				<a target="_blank" href="https://www.facebook.com/International-Journal-of-Biology-and-Chemistry-1697830597179942/">
+					<div class="socset-footer facebook-footer"></div>
+				</a>
+				<a target="_blank" href="https://twitter.com/kaznujournals">
+					<div class="socset-footer twitter-footer"></div>
+				</a>
+			</div>
+		</div>
+        <div class="pkpfooter-son">
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" ><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/80x15.png"></a><br>This work is licensed under a
+            <a style="color:rgb(47, 88, 0); text-decoration: underline;" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+        </div>
+    </footer>
+</html>

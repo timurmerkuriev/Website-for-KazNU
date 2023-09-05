@@ -1,0 +1,668 @@
+body {
+    background-color: #fffdef;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+}
+body ul{
+    list-style: none;   
+    padding: 0;
+}
+.column {
+    display: inline-block;
+    width: 90%;
+}
+header {
+    background-color: #679e00;
+    color: #ffffff;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+header img {
+    width: 25px;
+    margin: 3px;
+}
+a:hover {
+    opacity: .5;
+    text-decoration: none;
+}
+.menu {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 1rem;
+}
+#journal {
+    border: 1px solid grey;
+    max-width: 30%;
+    min-width: 200px;
+}
+table img{
+    max-width: 150px;
+    width: 90%;
+    vertical-align: unset;
+}
+footer {
+    background-color: #679e00;;
+    padding: 2em;
+    text-align: left;
+}
+div{
+}
+.navbar-expand-md .navbar-collapse {
+    justify-content: center;
+}
+.navbar {
+    font-size: 1.08em;
+    font-weight: 500;
+}
+.btn-group {
+    float: right;
+    top: -6px;
+}
+.mt-2, .my-2 {
+    margin-top: 0!important;
+}
+.nav-item {
+    padding-inline: 2vh;
+}
+.content {
+    display: inline-flex;
+    justify-content: space-evenly;
+    font-weight: 400;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-bottom: 6vh;
+    align-items: flex-end;
+}
+.facebook-footer {
+    background-image: url("https://ijbch.kaznu.kz/images/facebook-a.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30%;
+}
+.socset-footer {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    float: left;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.twitter-footer {
+    background-image: url("https://ijbch.kaznu.kz/images/twitter-a.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 55%;
+    margin-left: 15px;
+}
+.pkp_footer_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: #fff;
+    margin-inline: 2em;
+}
+.pkpfooter-son {
+    margin-top: 4em;
+    text-align: center;
+}
+.page {
+    text-align: left;
+    border-inline: 1px solid #DDD;
+    padding-left: 1.43rem;
+    padding-right: 1.43rem;
+    margin-left: -1.43rem;
+    margin-right: -1.43rem;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+.page a{
+    color: #2b7500;
+}
+h1 {
+    margin-bottom: 1rem;
+}
+footer a {
+    color:#fff;
+}
+.heading img {
+    width: 200px;
+    border: solid 1px grey;
+}
+.sections a{
+    color: #007e06;
+    font-size: ;
+}
+.sections h3{
+    font-size: medium;
+}
+.sections h2{
+    font-size: 1.3em;
+    margin-bottom: 1em;
+    font-weight: 400;
+}
+.meta {
+    position: relative;
+    padding-top: 0.357rem;
+    font-size: .85rem;
+    line-height: 1.43rem;
+}
+.authors {
+    padding-right: 5em;
+}
+.pages {
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 2.143rem;
+}
+.obj_galley_link {
+    border: 1px solid #016809!important;
+    color: #016809!important;
+
+    display: inline-block;
+    padding: 0 1em;
+    background:;
+    border-radius: 3px;
+    font-size: .93rem;
+    line-height: calc(2.143rem - 2px);
+    text-decoration: none;
+}
+.galleys_links {
+    margin-top: 0.714rem;
+    padding-inline-start: 0;
+}
+.section {
+    position: relative;
+    margin-top: 7rem;
+}
+.section li{
+    margin-bottom: 2em;
+}
+.obj_galley_link.pdf:before {
+    display:inline-block;
+    height:16px;
+    width:16px;
+    content: "";
+    background:url(https://cdn-icons-png.flaticon.com/512/482/482216.png);
+    background-size: 16px 16px;
+    filter: invert(31%) sepia(89%) saturate(973%) hue-rotate(92deg) brightness(89%) contrast(109%);
+    position: relative;
+    top: 2px;
+    right: 2px;
+}
+.column h1 {
+    font-family: "Noto Sans",-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen-Sans","Ubuntu","Cantarell","Helvetica Neue",sans-serif;
+    font-size: 1.5rem;
+    line-height: 2.143rem;
+    font-weight: 700;
+    -margin-bottom: 0em;
+}
+.cmp_breadcrumbs {
+    display: inline-block;
+}
+.cmp_breadcrumbs ol {
+    -margin-bottom: 30px;
+    padding: 5px 0;
+    line-height: 20px;
+    font-size: 13px;
+}
+.cmp_breadcrumbs li {
+    display: inline-block;
+}
+.obj_issue_toc .published .label {
+    font-weight: 700;
+}
+.obj_issue_toc .cover {
+    -float: left;
+    width: 25%;
+    height: auto;
+    max-height: none;
+    margin-right: 1.43rem;
+}
+.obj_issue_toc .published {
+    margin: 1.43rem 0;
+    display: inline-block;
+    position: absolute;
+}
+.obj_article_summary>.title {
+    font-family: "Noto Sans",-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen-Sans","Ubuntu","Cantarell","Helvetica Neue",sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.43rem;
+    font-weight: 700;
+    border-bottom: none;
+    margin: 0;
+}
+.cmp_announcements > li {
+    padding: 30px 10px;
+}
+.obj_announcement_summary .date {
+    font-size: 13px;
+    line-height: 25px;
+    color: rgba(0,0,0,0.54);
+}
+.obj_announcement_summary .summary {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+.obj_announcement_summary h2, .obj_announcement_summary h3, .obj_announcement_summary h4 {
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+}
+.obj_announcement_summary .date:before {
+    color: #ddd;
+    display:inline-block;
+    height:16px;
+    width:16px;
+    content: "";
+    background:url(https://www.iconpacks.net/icons/1/free-calendar-icon-865-thumb.png);
+    background-size: 16px 16px;
+    position: relative;
+    top: 2px;
+    right: 2px;
+}
+.obj_announcement_summary .read_more {
+    display: inline-block;
+    position: relative;
+    padding-right: 30px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #007ab2;
+    text-decoration: none;
+}
+.pkp_screen_reader, .cmp_skip_to_content a, .pkp_page_index .journals h2, .pkp_page_index .cmp_announcements h2, .page_register .context_optin .roles legend {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    left: -2000px;
+}
+.cmp_breadcrumbs .current h1 {
+    margin: 0;
+    font-family: "Noto Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+}
+.obj_issue_summary .title {
+    font-family: "Noto Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+}
+.obj_issue_summary .series {
+    margin-bottom: 5px;
+    color: rgba(0,0,0,0.54);
+}
+.issues_archive li{
+    margin: 5px;
+}  
+header h2 {
+    font-size: 1.5rem;
+}
+.headerlogin {
+}
+#reg {
+    position: ;
+    right: 1em;
+}
+#reg .nav-item {
+    padding-inline: 1em;
+}
+#connect-orcid-button {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}   
+.orcid_icon {
+    display: inline-block;
+    margin-right: 0.25em;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+.cmp_form fieldset {
+    margin: 0 0 1.43rem;
+    padding: 0;
+    border: none;
+}
+.page_register .consent {
+    margin-bottom: 0;
+}
+.page_register .fields .reviewer_interests {
+    max-height: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all .3s;
+}
+.page_register .fields .reviewer_interests.is_visible {
+    max-height: 400px;
+    overflow: visible;
+    -padding-bottom: 2.143rem;
+    opacity: 1;
+}
+.cmp_form .fields>div {
+    position: relative;
+    padding-bottom: 1rem;
+}
+.cmp_form label {
+    display: block;
+    cursor: pointer;
+}
+.cmp_form .label {
+    display: block;
+    font-size: .93rem;
+    font-weight: 400;
+    font-style: italic;
+}
+.cmp_button, .cmp_form .buttons button, .page_lost_password .buttons button, .page_search .submit button, .block_make_submission a {
+    display: inline-block;
+    padding: 0 1em;
+    background: #eee;
+    border: 1px solid rgba(0,0,0,0.4);
+    border-top-color: #bbb;
+    border-radius: 3px;
+    box-shadow: inset 0 -1em 1em rgba(0,0,0,0.1);
+    font-size: .93rem;
+    line-height: calc(2.143rem - 2px);
+    font-weight: 700;
+    color: #006798;
+    text-decoration: none;
+}
+.cmp_form legend {
+    margin-bottom: .714rem;
+    font-size: 1.143rem;
+    font-weight: 700;
+    line-height: 1.43rem;
+}
+.cmp_button:hover, .cmp_button:focus, .page_search .submit button:hover, .page_search .submit button:focus {
+    box-shadow: inset 0 1em 1em rgba(0,0,0,0.1);
+}
+.cmp_button, .cmp_form .buttons button, .pkp_head_wrapper .pkp_search button, .page_lost_password .buttons button, .page_search .submit button, .obj_article_details .citation_display form input[type="submit"], .block_make_submission a {
+    color: #069917!important;
+}
+.cmp_form .label .required {
+    color: #ff4040;
+}
+.cmp_form input[type="text"], .cmp_form input[type="email"], .cmp_form input[type="password"], .cmp_form input[type="url"], .cmp_form input[type="tel"], .cmp_form select {
+    max-width: 20em;
+}
+.cmp_form label>input[type="checkbox"], .cmp_form label>input[type="radio"] {
+    margin-right: 0.25em;
+}
+.cmp_form .fields>div {
+    position: relative;
+    -padding-bottom: 2.143rem;
+}
+[type="checkbox"], [type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+.page_login form a, .page_register form a {
+    color: #266900;
+    text-decoration:underline;
+}
+.cmp_form .buttons a {
+    font-size: .93rem;
+    line-height: 2.143rem;
+    margin-left: 1em;
+}
+.page_login .remember {
+    padding-bottom: 0;
+}
+.page_login .remember .label {
+    display: inline;
+    font-style: normal;
+}
+.page_login .buttons a {
+    float: right;
+    margin-right: 1em;
+    margin-left: 0;
+}
+.page_login .login {
+    margin-bottom: 0;
+    max-width: 17em;
+}
+.page_login .buttons button {
+    float: right;
+}
+.page_login .password a {
+    font-size: .93rem;
+    font-style: normal;
+    display: block;
+}
+.cmp_form input[type="text"], .cmp_form input[type="email"], .cmp_form input[type="password"], .cmp_form input[type="url"], .cmp_form input[type="tel"], .cmp_form select {
+    max-width: 20em;
+}
+.cmp_form input[type="text"], .cmp_form input[type="email"], .cmp_form input[type="password"], .cmp_form input[type="url"], .cmp_form input[type="tel"], .cmp_form select, .cmp_form textarea {
+    padding: 0 .5em;
+    width: 100%;
+    height: calc(2.143rem - 2px);
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.4);
+    border-radius: 3px;
+    font-size: .93rem;
+    line-height: calc(2.143rem - 2px);
+}
+.nav-item_2 {
+    align-self: flex-end;
+}
+.nav-item1 {
+    margin-inline: 5px;
+}
+@media (min-width: 888px) {
+    .navbar-expand-md #reg{
+        position: absolute;
+        right: 1em;
+        flex-direction: row-reverse;
+    }
+}
+.page h3 {
+    font-family: "Noto Sans",-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen-Sans","Ubuntu","Cantarell","Helvetica Neue",sans-serif;
+    font-size: 1.143rem;
+    line-height: 1.43rem;
+    font-weight: 700;
+}
+.page_contact .contact {
+    padding-right: 70px;
+
+}   
+.page_contact .address, .page_contact .phone, .page_contact .email {
+    margin-top: .3rem;
+    margin-bottom: 1.5rem;
+    font-size: .93rem;
+}
+.obj_article_details .row {
+    margin-left: -2.143rem;
+    margin-right: -2.143rem;
+}
+.obj_article_details .item {
+    padding: 2.143rem;
+}
+.obj_article_details .authors .name {
+    font-weight: bold;
+    display: block;
+}
+.obj_article_details .authors .affiliation {
+    font-size: .93rem;
+    color: rgba(0,0,0,0.54);
+}
+.obj_article_details .main_entry .item.doi .label, .obj_article_details .main_entry .item.keywords .label {
+    display: inline;
+    font-size: 1rem;
+}
+.obj_article_details .main_entry .item .label {
+    margin: 0 0 1.43rem;
+    font-family: "Noto Sans",-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen-Sans","Ubuntu","Cantarell","Helvetica Neue",sans-serif;
+    font-size: 1.143rem;
+    font-weight: 700;
+}
+.row:before, .row:after {
+    content: " ";
+    display: table;
+}
+.obj_article_details .entry_details .item {
+    margin-right: -1px;
+    border-bottom: 1px solid #ddd;
+}
+.obj_article_details .entry_details img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+.obj_article_details .entry_details .item {
+    padding: 1.43rem;
+    border-bottom: 1px solid #ddd;
+    word-wrap: break-word;
+}
+.obj_article_details .entry_details .item .label {
+    margin: 0;
+    font-family: "Noto Sans",-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen-Sans","Ubuntu","Cantarell","Helvetica Neue",sans-serif;
+    font-size: .93rem;
+    font-weight: 400;
+    color: rgba(0,0,0,0.54);
+}
+.obj_article_details .citation_display .value {
+    font-size: .75rem;
+}
+.obj_article_details .citation_display .citation_formats {
+    margin-top: 1em;
+    border: 1px solid rgba(0,0,0,0.4);
+    border-radius: 3px;
+}
+.obj_article_details .citation_display .citation_formats_button {
+    position: relative;
+    background: transparent;
+    border: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: none;
+    padding: 0 1em;
+    width: 100%;
+    font-family: "Noto Sans",-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen-Sans","Ubuntu","Cantarell","Helvetica Neue",sans-serif;
+    font-weight: 400;
+    color: rgba(0,0,0,0.54);
+    text-align: left;
+}
+.obj_article_details .citation_display .citation_formats_styles {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.obj_article_details .citation_display .citation_formats_styles+.label {
+    -border-top: 1px solid #ddd;
+}
+.obj_article_details .citation_display .citation_formats_styles a {
+    display: block;
+    padding: .5em 1em;
+    border-bottom: 1px solid #ddd;
+    text-decoration: none;
+}
+.obj_article_details .citation_display .citation_formats_list .label {
+    padding: 1em 1em .25em 1em;
+}
+.obj_article_details .entry_details .item .label {
+    margin: 0;
+    font-family: "Noto Sans",-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen-Sans","Ubuntu","Cantarell","Helvetica Neue",sans-serif;
+    font-size: .93rem;
+    font-weight: 400;
+    color: rgba(0,0,0,0.54);
+}
+.obj_article_details .citation_display span {
+    margin-right: 0.5em;
+}
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.obj_article_details .sub_item {
+    margin-bottom: 1.43rem;
+}
+.obj_article_details .sub_item:last-child {
+    margin-bottom: 0;
+}
+.obj_article_details .row {
+    margin-left: -1.43rem;
+    margin-right: -1.43rem;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.obj_article_details .entry_details .item:last-child {
+    border-bottom: none;
+}
+.obj_article_details .citation_display [aria-hidden="true"] {
+    display: none;
+}
+.obj_article_details .citation_display .citation_formats_button:after {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+    display: inline-block;
+    height:16px;
+    width:16px;
+    content: "";
+    background:url(https://cdn-icons-png.flaticon.com/512/3580/3580085.png);
+    background-size: 16px 16px;
+    filter: invert(31%) sepia(89%) saturate(973%) hue-rotate(92deg) brightness(89%) contrast(109%);
+    position: absolute;
+    top: 50%;
+    right: 1em;
+    transform: translateY(-50%);
+}
+@media (min-width: 768px){
+    .obj_article_details .main_entry {
+    float: left;
+    width: 428px;
+    border-right: 1px solid #ddd;
+}
+}
+@media (min-width: 992px){
+    .obj_article_details .main_entry {
+        width: 560px;
+    }
+}
+@media (min-width: 1200px){
+    .obj_article_details .main_entry {
+        width: 560px;
+    }
+}
+@media (min-width: 768px){
+    .column {
+        width: 684px;
+    }
+}
+@media (min-width: 992px){
+    .column {
+        width: 816px;
+    }
+}
+@media (min-width: 1200px){
+.column {
+    width: 816px;
+}
+}
+@media (min-width: 480px){
+    .obj_article_details .entry_details {
+        margin-left: -2.143rem;
+        margin-right: -2.143rem;
+        padding: 44px;
+    }
+}
+@media (min-width: 768px){
+.obj_article_details .entry_details {
+    float: left;
+    width: 300px;
+    margin: 0 0 0 -1px;
+    border-top: none;
+    border-left: 1px solid #ddd;
+    padding: 0;
+}
+}
